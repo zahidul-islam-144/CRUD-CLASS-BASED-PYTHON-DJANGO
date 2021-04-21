@@ -1,0 +1,26 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{% block title_block %}CRUD{% endblock %}</title>
+
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  </head> 
+  <body>
+        <div class="top-heading1">
+            <h1>Base-Class Based CRUD Operation</h1>
+        </div>
+
+        {% block body_block %}
+        
+        {% endblock %}
+
+        <script src="{% static 'js/bootstrap.js' %}"></script>
+        <script src="{% static 'js/jquery.js' %}"></script>
+        <script src="{% static 'js/popper.js' %}"></script>
+  </body>
+</html>
